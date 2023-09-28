@@ -22,15 +22,15 @@ void setup() {
   widthFooter = widthTitle;
   heightFooter = heightTitle;
   //
-  //DIVs or rect()
-  //Layout our text space and typoghrapical features
+  // DIVs or rect()
+  // Layout our text space and typoghrapical features
   rect( xTitle, yTitle, widthTitle, heightTitle); 
   rect( xFooter, yFooter, widthFooter, heightFooter ); 
   //
   // Text Setup
   // Fonts from OS (Operating System) 
-  String[] fontList = PFont.list(); //Lists all fonts available on OS
-  printArray(fontList);
+  //String[] fontList = PFont.list(); //Lists all fonts available on OS
+  //printArray(fontList);
    titleFont =  createFont("Harrington", 55);
    footerFont =  createFont("ArialMT", 55);
   //
@@ -43,12 +43,13 @@ void draw() {
   //
   fill(green); //ink
   textAlign(CENTER, CENTER);
-  size = 50 ;
+  size = 60;
   textFont(titleFont, size);
   text (title, xTitle, yTitle, widthTitle, heightTitle);
   textFont(footerFont, size);
   fill(yellow); //ink
   textAlign(CENTER, TOP);
+   size = 60;
   text ( Footer, xFooter, yFooter, widthFooter, heightFooter );
   fill(resetDefaultInk); //ink
   //
